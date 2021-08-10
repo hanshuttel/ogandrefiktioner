@@ -1,0 +1,28 @@
+\chapter{Total fiktion i computeren}
+
+\section{Tal og to-tal}
+
+Når computere skal arbejde med tal, er de nødt til at repræsentere dem på en eller anden måde.
+
+En repræsentation af et tal kalder man for en \emph{numeral}. Numeraler er dermed en fiktion om tal.
+
+Normalt skriver vi i vore dage tal med numeraler fra det, vi kalder for titalssystemet. Tallet sytten skriver vi som $17$, for $17$ er summen af $1$ ti'er og $7$ enere. Tallet femhundredetotogtredive skriver vi som $532$, for $532$ er summen af $5$ hundrede'r, $3$ ti'ere og $2$ enere. Sagt på en anden måde:
+%
+\[ 532 = 5 \cdot 10^2 + 3 \cdot 10^1 + 2 \cdot 1^0 \]
+%
+Vi har "opløst" $532$ som en sum af potenser af $10$, hvor koefficienterne er $5$, $3$ og $2$ -- og i alle tilfælde skal være mindre end $10$. Men numeraler kunne også skrives ved at opløse et tal som en sum af potenser af $2$. Dette er totalssystemet, også kendt som det binære talsystem. Her repræsenterer vi tallet sytten som $10001$, for
+%
+\[ 17 = 1 \cdot 2^4 + 0 \cdot 2^3 +  0 \cdot 2^2 +  0 \cdot 2^1 +  1 \cdot 2^0 \]
+%
+Her må koefficienterne altså være mindre end $2$, dvs. cifrene $1$ eller $0$. Disse cifre kalder man for \emph{bits} -- "bit" for det engelske "binary digit". 
+
+Hvorfor lige totalssystemet? vil nogen her spørge. Årsagen er enkel: Kredsløbene i en computer er bygget op som milliarder af gates. En gate er en "kontakt" i kredsløbet, der kan være tændt ($1$) eller slukket ($0$
+). Derfor kan man repræsentere et tal ved at tænde og slukke for de rigtige kontakter.
+
+\section{Spillet om civilisationen}
+
+I computerspillet \emph{Civilization}, hvor spilleren styrer en fiktiv civilisation fra en stenalderboplads til en rumfarende supermagt, figurerer der fiktive udgaver af virkelighedens historiske verdensledere, hvis adfærd bl.a. reguleres af talværdier - f.eks. er en verdensleders tilbøjelighed til at kaste sig ud i angrebskrige repræsenteret ved en \texttt{aggression}-værdi. Mange af spillets hændelser påvirker de forskellige lederes og kulturers attributter. F.eks. betød indførelsen af demokrati at lederens \texttt{aggression} reduceredes med $2$, for at simulere at demokratier er fredeligere end tyrannier.
+
+En af spillets verdensledere er den indiske revolutionsleder og pacifist, Mohandas Gandhi. For at skildre Gandhi som en fredelig leder valgte spillets udviklere at give ham en \texttt{aggression} på $1$; den laveste hos nogen af spillets fiktionaliserede verdensledere. I hovedparten af spillet opførte Gandhi sig som man ville forvente: Han fokuserede på kulturel og videnskabelig udvikling, etablerede fredelige handelsforbindelser med nabolandene, og forholdt sig neutralt i andres krige. Men han havde også et temmelig uheldigt træk: I det øjeblik han indfører en demokratisk styreform går han med det samme bersærk og indleder atomkrige mod alle andre civilisationer han har kontakt med.
+
+Denne temmelig bizarre opførsel skyldes en programfejl---nærmere bestemt skyldes den at to fiktioner (der underligger spillets egen fiktion) ikke stemmer overens. Den ene fiktion er fiktionen om heltal. Den anden er fiktionen om at "talværdierne" i programmeringssproget, dvs. numeralerne, faktisk repræsenterer heltal.
